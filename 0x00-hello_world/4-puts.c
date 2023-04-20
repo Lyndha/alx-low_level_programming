@@ -1,4 +1,4 @@
-#include stdio.h
+#include <stdio.h>
 /**
  * main - A C program that prints using puts function and not allowed to use printf.
  * Return: 0 (this shows that my work is done correctly)
