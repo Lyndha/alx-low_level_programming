@@ -3,16 +3,16 @@
 #include <time.h>
 
 /**
- * main - assign a random number to a variabel
+ * main - entry point.
+ * description - prints if positive or negative.
  *
- * return: 0 (success)
+ * return: 0 (success).
  */
 int main(void)
 {
-	int n:
+	int n;
 
 	srand(time(0));
-
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
