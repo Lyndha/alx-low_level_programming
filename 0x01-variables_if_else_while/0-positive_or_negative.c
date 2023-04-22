@@ -3,8 +3,8 @@
 #include <time.h>
 
 /**
- * main - entry point.
- * description - prints if positive or negative.
+ * main - prints the last digit of a randomly generated number.
+ * description - and weather it is greater than 5, less than 6, or 0.
  *
  * return: 0 (success).
  */
@@ -15,8 +15,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-	{
-		ptintf("%d is positive\n", n);
+	{printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
