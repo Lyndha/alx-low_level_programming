@@ -4,9 +4,10 @@
 /**
  * main - prints function.
  * Description: 'get the last digits if a number'
- * return: alwaus 0.
+ * Return: Always 0.
  */
-int main() {
+int main(void)
+{
 int n;
 int ld;
 
@@ -25,5 +26,5 @@ else
 {
 	printf("last digit of %d is %d and less than 6 and not 0\n", n, ld);
 }
-return 0;
+return (0);
 }
