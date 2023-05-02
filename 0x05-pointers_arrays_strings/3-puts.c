@@ -4,7 +4,7 @@
  * @str: string to return
  * Return: void
  */
-void _puts(chat *str)
+void _puts(char *str)
 {
 	for (; *str != '\0'; str++)
 	{
