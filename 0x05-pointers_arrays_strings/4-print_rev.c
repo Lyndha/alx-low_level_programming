@@ -5,7 +5,7 @@
  * @s: the sring to pring
  * Return: void
  */
-void print_rev(chat *s)
+void print_rev(char *s)
 {
 	int c = 0;
 
