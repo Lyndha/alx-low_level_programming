@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - a program that prints a number
+ * Return: Always 0
+ */
 int main(void)
 {
 	int n;
