@@ -70,16 +70,20 @@ void _class(unsigned char *pt)
 {
 	printf("  Class:                             ");
 
-	unsigned int class = pt[EI_CLASS];
-
-	if (class == ELFCLASSNONE)
+	switch (pt[EI_CLASS])
+	{
+	case ELFCLASSNONE:
 		printf("none\n");
-	else if (class == ELFCLASS32)
+		break;
+	case ELFCLASS32:
 		printf("ELF32\n");
-	else if (class == ELFCLASS64)
+		break;
+	case ELFCLASS64:
 		printf("ELF64\n");
-	else
-		printf("<unknown: %x>\n", class);
+		break;
+	default:
+		printf("<unknown: %x>\n", pt[EI_CLASS]);
+	}
 }
 
 
